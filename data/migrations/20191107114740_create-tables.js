@@ -16,6 +16,7 @@ exports.up = function (knex) {
         // it needs to reference the id on the table
         .references('id')
         .inTable('species')
+        // .onDelete('CASCADE')
     })
 };
 
